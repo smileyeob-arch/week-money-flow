@@ -1,0 +1,67 @@
+{
+  "updated_at": "샘플 데이터 - 실제 키움 데이터 아님",
+  "weeks": [
+    {
+      "id": "2026-W43",
+      "label": "예시 주간",
+      "stocks": [
+        {
+          "market": "KOSPI",
+          "code": "000660",
+          "name": "SK하이닉스",
+          "sector": "반도체",
+          "value": 850000000000,
+          "prev_value": 690000000000
+        },
+        {
+          "market": "KOSPI",
+          "code": "005930",
+          "name": "삼성전자",
+          "sector": "반도체",
+          "value": 620000000000,
+          "prev_value": 710000000000
+        },
+        {
+          "market": "KOSPI",
+          "code": "010120",
+          "name": "LS ELECTRIC",
+          "sector": "전력기기",
+          "value": 310000000000,
+          "prev_value": 210000000000
+        },
+        {
+          "market": "KOSDAQ",
+          "code": "277810",
+          "name": "레인보우로보틱스",
+          "sector": "로봇",
+          "value": 180000000000,
+          "prev_value": 120000000000
+        },
+        {
+          "market": "KOSDAQ",
+          "code": "086900",
+          "name": "메디톡스",
+          "sector": "바이오",
+          "value": 95000000000,
+          "prev_value": 110000000000
+        },
+        {
+          "market": "KOSPI",
+          "code": "034020",
+          "name": "두산에너빌리티",
+          "sector": "원전",
+          "value": 260000000000,
+          "prev_value": 195000000000
+        },
+        {
+          "market": "KOSDAQ",
+          "code": "058470",
+          "name": "리노공업",
+          "sector": "반도체",
+          "value": 145000000000,
+          "prev_value": 100000000000
+        }
+      ]
+    }
+  ]
+}

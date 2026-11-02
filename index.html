@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <title>주간 자금 흐름 분석실</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div><span class="eyebrow">WEEKLY MONEY FLOW</span><h1>주간 자금 흐름 분석실</h1><p>코스피 · 코스닥 주간 거래대금과 주도 섹터</p></div><span class="pill" id="status">샘플 데이터</span></header>
+<main>
+  <section class="toolbar">
+    <label>시장 <select id="market"><option value="ALL">전체 시장</option><option value="KOSPI">코스피</option><option value="KOSDAQ">코스닥</option></select></label>
+    <label>주차 <select id="week"></select></label>
+    <button id="reload">데이터 새로고침</button>
+  </section>
+  <section class="stats">
+    <article class="stat"><span>주간 거래대금 합계</span><strong id="total">-</strong><small>선택 시장 기준</small></article>
+    <article class="stat"><span>집계 종목 수</span><strong id="count">-</strong><small>중복 종목 제거</small></article>
+    <article class="stat"><span>주도 섹터</span><strong id="leader">-</strong><small>거래대금 합산 기준</small></article>
+  </section>
+  <section class="panel"><div class="section-head"><div><h2>주간 섹터 TOP 10</h2><p>테마 매핑 종목의 주간 거래대금 합계</p></div></div><div id="sectors" class="bars"></div></section>
+  <section class="panel"><div class="section-head"><div><h2>섹터별 종목 TOP 5</h2><p>선택 섹터의 거래대금 상위 종목</p></div><select id="sectorSelect"></select></div><div class="table-wrap"><table><thead><tr><th>시장</th><th>종목</th><th>코드</th><th class="num">주간 거래대금</th><th class="num">전주 대비</th></tr></thead><tbody id="stocks"></tbody></table></div></section>
+  <section class="panel"><div class="section-head"><div><h2>데이터 가져오기</h2><p>초기 버전은 CSV/JSON 검증용 업로드 지원</p></div></div><p class="hint">키움 API 자동 수집은 인증정보와 일별 데이터 조회 TR을 연결한 뒤 활성화됩니다. API 키를 이 웹페이지에 입력하지 마세요.</p><input type="file" id="file" accept=".json,.csv"><button id="import">파일 불러오기</button><span id="message" class="message"></span></section>
+  <footer>개인 투자 분석용 · 수치가 없거나 샘플이면 실제 시장 데이터로 간주하지 마세요.</footer>
+</main>
+<script src="app.js"></script>
+</body></html>
